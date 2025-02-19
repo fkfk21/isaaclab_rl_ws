@@ -1,0 +1,9 @@
+repositories:
+  isaaclab:
+    type: git
+    url: git@github.com:isaac-sim/IsaacLab.git
+    version: v1.4.1
+  mevius_isaac_lab:
+    type: git
+    url: git@github.com:fkfk21/mevius_isaac_lab.git
+    version: main

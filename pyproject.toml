@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "isaaclab-rl-ws"
+version = "0.1.0"
+description = ""
+authors = ["Kenji Fukuda <fk.kenji.21@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+wheel = "^0.45.1"
+
+# isaacsim version: 4.2.0.2
+torch = {version = "2.4.0+cu121", source = "pytorch_121"}
+isaacsim-rl = {version = "4.2.0.2", source = "nvidia"}
+isaacsim-replicator = {version = "4.2.0.2", source = "nvidia"}
+isaacsim-extscache-physics = {version = "4.2.0.2", source = "nvidia"}
+isaacsim-extscache-kit-sdk = {version = "4.2.0.2", source = "nvidia"}
+isaacsim-extscache-kit = {version = "4.2.0.2", source = "nvidia"}
+isaacsim-app = {version = "4.2.0.2", source = "nvidia"}
+isaacsim-kernel = {version = "4.2.0.2", source = "nvidia"}
+isaacsim-asset = {version = "4.2.0.2", source = "nvidia"}
+isaacsim = {version = "4.2.0.2", source = "nvidia"}
+
+
+[[tool.poetry.source]]
+name = "pytorch_121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "supplemental"
+
+[[tool.poetry.source]]
+name = "nvidia"
+url = "https://pypi.nvidia.com"
+priority = "supplemental"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
