@@ -5,5 +5,5 @@ repositories:
     version: v1.4.1
   mevius_isaac_lab:
     type: git
-    url: git@github.com:fkfk21/mevius_isaac_lab.git
+    url: git@github.com:CoRE-MA-KING/mevius_isaac_lab.git
     version: isaaclab-v1
